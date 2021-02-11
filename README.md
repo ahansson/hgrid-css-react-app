@@ -8,7 +8,7 @@ https://github.com/ahansson/hgrid-css
 
 ## ***
 
-Project forked from [Create React App](https://github.com/facebook/create-react-app).
+Project forked from [Create React App](https://github.com/facebook/create-react-app) (the lighter CLI/npx version).
 
 Original readme:
 
