@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# Integrating hgrid-css in a React project
+
+## Documentation
+https://hgrid.io/documentation/integrate/#react
+
+### Repository
+https://github.com/ahansson/hgrid-css
+
+## ***
+
+Project forked from [Create React App](https://github.com/facebook/create-react-app).
+
+Original readme:
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

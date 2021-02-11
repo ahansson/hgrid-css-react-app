@@ -1,0 +1,22 @@
+// Customize hgrid variables
+$stack-point: 700px;
+$container-max-width: 1200px;
+$column-gutter-width: 3%;
+
+// Import hgrid
+@import '~hgrid-css/sass/hgrid.scss';
+
+// ... or import just certain modules:
+
+// @import '~hgrid-css/sass/variables/variables.scss'; // Required*
+// @import '~hgrid-css/sass/mixins/mixins.scss'; // Required*
+// @import '~hgrid-css/sass/base/base.scss'; // Required*
+// @import '~hgrid-css/sass/layout/flex.scss';
+// @import '~hgrid-css/sass/layout/containers.scss';
+// @import '~hgrid-css/sass/layout/auto-columns.scss';
+// @import '~hgrid-css/sass/layout/helpers/background.scss';
+
+body {
+  background: #8872ff;
+  height: 100vh;
+}
