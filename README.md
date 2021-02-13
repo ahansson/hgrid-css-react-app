@@ -1,14 +1,15 @@
-# Integrating hgrid-css in a React project
+# Integrating [hgrid-css](https://github.com/ahansson/hgrid-css) in a React project
 
 ## Documentation
 https://hgrid.io/documentation/integrate/#react
 
-### Repository
+## Repository
 https://github.com/ahansson/hgrid-css
 
 <p><img src="./public/hgrid-react-screenshot.png"></p>
 
-## ***
+## *************
+
 
 Project forked from [Create React App](https://github.com/facebook/create-react-app) (the lighter CLI/npx version).
 
