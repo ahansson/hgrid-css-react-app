@@ -6,6 +6,8 @@ https://hgrid.io/documentation/integrate/#react
 ### Repository
 https://github.com/ahansson/hgrid-css
 
+<p><img src="./public/hgrid-react-screenshot.png"></p>
+
 ## ***
 
 Project forked from [Create React App](https://github.com/facebook/create-react-app) (the lighter CLI/npx version).
