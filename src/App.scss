@@ -8,14 +8,14 @@
     padding: 1rem 2rem;
   }
 
-  // See if a hgrid default variable is available:
+  // Let's see if a hgrid default variable is available:
 
-  @media (max-width: $phone-landscape) {
+  @media (max-width: $phone-landscape) { // works!
     text-align: center;
   }
 }
 
-// Let's use another variable that already has been customized.
+// Let's use another variable that already has been customized in index.scss.
 // We'll use it to override hgrid's '.container-max' class:
 
 .container-max {
@@ -24,8 +24,9 @@
 
 // Inspect the page and you will see that the 1200px 
 // '$container-max-width' variable we configured in 'index.scss' has been 
-// overridden by the default value of 1440px we imported into this file.
+// overridden by the default value of 1440px from the original variables we imported 
+// into this file.
 
 // Default variables we override in index.scss will display in dev tools as 
-// coming from hgrid's own '_containers.scss'. This is correct, as customized variables
+// originating from hgrid's own '_containers.scss'. This is correct, as customized variables
 // get injected into hgrid during compilation.

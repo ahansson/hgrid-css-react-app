@@ -1,9 +1,11 @@
 // Customize hgrid variables
+
 $stack-point: 700px;
 $container-max-width: 1200px;
 $column-gutter-width: 3%;
 
 // Import hgrid
+
 @import '~hgrid-css/sass/hgrid.scss';
 
 // ... or import just certain modules:
@@ -16,7 +18,9 @@ $column-gutter-width: 3%;
 // @import '~hgrid-css/sass/layout/auto-columns.scss';
 // @import '~hgrid-css/sass/layout/helpers/background.scss';
 
+// Other global styles from here down
+
 body {
-  background: #8872ff;
+  background: #6f61be;
   height: 100vh;
 }

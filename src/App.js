@@ -1,6 +1,8 @@
-import './App.scss';
+import './App.scss'
+import SmallComponent from './components/SmallComponent'
 
 function App() {
+
   return (
     <div className="App container-max">
       <div className="row padding-top-150">
@@ -9,8 +11,12 @@ function App() {
         <div className="column radius-6 bg-gray-darker text-white">More content</div>
         <div className="column radius-6 bg-white text-blue">Hello content</div>
       </div>
+      <SmallComponent
+        title = "This is my component"
+        tagline = "My component tagline"
+      ></ SmallComponent>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

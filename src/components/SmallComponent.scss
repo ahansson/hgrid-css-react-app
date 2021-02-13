@@ -1,0 +1,23 @@
+// $custom-stack-point: 900px;
+
+// Overriding hgrid's h1 text color
+
+// React (and create-react-app) doesn't ship with scoped css by default, so
+// the CSS styles you add here are global and will influence both parent and child 
+// components – unless you namespace them, or use a solution such 
+// as https://github.com/gaoxiaoliangz/react-scoped-css
+
+.SmallComponent h1 {
+  color: #ff5e00;
+  transition: 0.6s ease;
+  letter-spacing: -1px;
+
+  &:hover {
+    cursor: pointer;
+    color: #22009b;
+  }
+
+  @media (max-width: 700px) {
+    color: #1b007a;
+  }
+}
