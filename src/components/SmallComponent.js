@@ -9,11 +9,11 @@ class SmallComponent extends Component {
   
       <div className="SmallComponent row custom-stack">
         <div className="
-          mt-60 
-          radius-8
-          box-shadow-3
-          column-fill 
+          mt-60
           bg-white
+          radius-8
+          column-fill 
+          box-shadow-3
           padding-top-20 
           padding-left-30 
           padding-right-30 

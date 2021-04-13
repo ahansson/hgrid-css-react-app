@@ -1,26 +1,42 @@
-// Customize hgrid variables
+// Import and customize hgrid
 
-$stack-point: 700px;
-$container-max-width: 1200px;
-$column-gutter-width: 3%;
+@use '~hgrid-css/sass/hgrid' with (
+  $body-bg: #7056ce,
+  $link-color: #00a344,
+  $link-color-hover: #00cc66,
+  $container-max-width: 1680px,
+  $link-underline-color: #daae00,
+  $column-gutter-width: 1.2%,
+  $turn-off-link-decoration: true,
+  $use-global-link-underlines: true,
+);
 
-// Import hgrid
+// ... or @use only specific modules:
 
-@import '~hgrid-css/sass/hgrid.scss';
+// @use '~hgrid-css/sass/variables/variables'; // Required*
+// @use '~hgrid-css/sass/mixins/mixins'; // Required*
+// @use '~hgrid-css/sass/base/base'; // Required*
 
-// ... or import just certain modules:
+// @use '~hgrid-css/sass/base/a11y';
+// @use '~hgrid-css/sass/layout/flex';
+// @use '~hgrid-css/sass/layout/containers';
+// @use '~hgrid-css/sass/layout/auto-columns';
+// @use '~hgrid-css/sass/layout/helpers/background';
 
-// @import '~hgrid-css/sass/variables/variables.scss'; // Required*
-// @import '~hgrid-css/sass/mixins/mixins.scss'; // Required*
-// @import '~hgrid-css/sass/base/base.scss'; // Required*
-// @import '~hgrid-css/sass/layout/flex.scss';
-// @import '~hgrid-css/sass/layout/containers.scss';
-// @import '~hgrid-css/sass/layout/auto-columns.scss';
-// @import '~hgrid-css/sass/layout/helpers/background.scss';
+// Add other global styles from here down
 
-// Other global styles from here down
+// You have access to hgrid's custom properties
+// https://hgrid.io/documentation/variables/
 
-body {
-  background: #6f61be;
-  height: 100vh;
+.example {
+  background: var(--bg-dark);
+
+  h1 {
+    color: var(--text-color-secondary);
+    font-size: 3rem;
+
+    @media (max-width: var(--phone)) {
+      font-size: 2.4rem;
+    }
+  }
 }

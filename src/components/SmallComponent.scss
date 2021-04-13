@@ -1,21 +1,35 @@
-// Overriding hgrid's h1 text color
+// We can @use any hgrid partial such as mixins or variables 
+// in components.
 
-// React (and create-react-app) doesn't ship with scoped css by default, so
-// the CSS styles you add here are global and will influence both parent and child 
-// components – unless you namespace them, or use a solution such 
-// as https://github.com/gaoxiaoliangz/react-scoped-css
+// Let's try this with the viewport mixin that can help us create 
+// consistent @media queries.
+
+@use '~hgrid-css/sass/mixins/mixins' as mixin;
+
+// 1. Override hgrid's h1 text color
 
 .SmallComponent h1 {
   color: #ff5e00;
   transition: 0.6s ease;
   letter-spacing: -1px;
 
+  // 2. Let's try a custom property (--variable) from hgrid
+
   &:hover {
     cursor: pointer;
-    color: #22009b;
+    color: var(--theme-color-secondary);
   }
 
-  @media (max-width: 700px) {
+  // 3. @use the namespaced viewport mixin from above:
+
+  @include mixin.viewport(tablet-portrait) {
     color: #1b007a;
   }
+}
+
+// 4. Let's see if we can override a custom property, too.
+
+.container-max {
+  --container-max-width: 1200px;
+  max-width: var(--container-max-width);
 }

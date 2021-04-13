@@ -1,32 +1,6 @@
-// We can give access to the hgrid variables here too, if needed:
-
-@import '~hgrid-css/sass/variables/variables.scss';
-
 .App {
-  font-size: 30px;
+  font-size: 3rem;
   .column {
     padding: 1rem 2rem;
   }
-
-  // Let's see if a hgrid default variable is available:
-
-  @media (max-width: $phone-landscape) { // works!
-    text-align: center;
-  }
 }
-
-// Let's use another variable that already has been customized in index.scss.
-// We'll use it to override hgrid's '.container-max' class:
-
-.container-max {
-  max-width: $container-max-width;
-}
-
-// Inspect the page and you will see that the 1200px 
-// '$container-max-width' variable we configured in 'index.scss' has been 
-// overridden by the default value of 1440px from the original variables we imported 
-// into this file.
-
-// Default variables we override in index.scss will display in dev tools as 
-// originating from hgrid's own '_containers.scss'. This is correct, as customized variables
-// get injected into hgrid during compilation.
